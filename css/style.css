@@ -1,0 +1,264 @@
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+/* ------------------------------------------------------------ helpers ------------------------------------------------------------ */
+.show{
+    display: block;
+  }
+  .hide{
+    display: none;
+  }
+
+/* ------------------------------------------------------------ header ------------------------------------------------------------ */
+
+
+.header {
+    height: 15vh;
+    background: linear-gradient(180deg, #08aff152, white );
+}
+.header .logo {
+    height: 12vh;
+}
+.header .logo img {
+height: 12vh;   
+}
+.header .recherche input{
+  border-radius: 20px 0px 0px 20px;
+}
+.header .recherche input:focus {
+    box-shadow: none;
+}
+.header .recherche .btn-recherche {
+  background: skyblue;
+  border-radius: 0px 20px 20px 0px;
+}
+.header .recherche .btn-recherche:hover , .btn-recherche:focus {
+  background: #08aff1;
+}
+
+.header .lang .form-check label {
+  color: #114498;
+      }
+.header .lang .form-check label img{
+        width: 15%;
+      }
+.header .lang .form-check input {
+          height: 3.5vh;
+          width: 37%;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+        }
+.header .lang .form-check input:checked {
+        box-shadow: 0 0 0 0.25rem rgba(13,110,253,.25);
+      } 
+
+.header .lang .form-check:first-child input {
+        
+          background-image: url("../images/fr2.png");
+        
+      }
+.header .lang .form-check:last-child input {
+          background-image: url("../images/ar2.png");
+          
+      }
+.header .connect .btn{
+      height: 7vh;
+    font-size: 19px;
+    background: #08aff1;
+
+} 
+.header .connect .btn:hover{
+   background: #20df20;
+} 
+
+/* ----------------------------------------------------- Se connecter " Modal " ----------------------------------------------------- */
+
+
+.connexion{
+border-radius: 25px;
+border: none;
+background-image: url("../images/logo.png");
+background-position: center;
+background-size: contain;
+background-repeat: no-repeat;
+}  
+
+.connexion .modal-body{
+height: 65vh;
+box-shadow: 0px 0px 10px 7px #001b48;
+border-radius: 25px;
+background: #add8e6d4;
+
+}
+
+.connexion .modal-body h4 , p ,label{
+color: #042a6b;
+
+}
+
+.connexion .modal-body span{
+background: #47a4cb;
+
+}
+
+.connexion .modal-body .btn-connect {
+background: #123268;
+
+}
+
+.connexion .modal-body .btn-connect:hover {
+background: #20df20;
+
+}
+
+/* ------------------------------------------------------------ Navbar ------------------------------------------------------------ */
+
+
+.navbar{
+    /* background: black; */
+  background:#001b48;
+  height: 9vh;
+  }
+  .navbar .navbar-brand{
+      width: 5%;
+      height: 9vh;
+  }
+  .navbar .navbar-brand img{
+      height: 9vh;
+  }
+  
+  .navbar .navbar-nav .nav-item .nav-link{
+      font-size: 18px;
+      color: #fff;
+      border-radius: 10px 0px;
+  
+  }
+  
+  .navbar .navbar-nav .nav-item .nav-link:hover{
+      background: lightblue;
+      box-shadow: 6px -6px 0px 0px white;
+      color: #001b48;
+      transition: all 0.5s ease-in-out;
+  }
+  
+/*------------------------------------------------------------- Main -------------------------------------------------------------*/
+
+/*------------------------------------------------------------- sidebar -------------------------------------------------------------*/
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1030;
+  top: 0;
+  margin-left: -2%;
+  background-color: #001b48;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.sidebar ul li {
+  width: 324px;          
+  }
+  .sidebar ul li a{
+    color: white;       
+  }
+  .sidebar ul li:hover{
+    background: lightblue;
+  }
+  .sidebar ul li:hover a{
+    color: #001b48;
+  }
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+/*------------------------------------------------------------- part1 -------------------------------------------------------------*/
+.main .part1 .pub2 {
+    height: 80vh;
+ }
+ .main .part1 .pub2 .carousel {
+box-shadow: 0px 0px 10px 2px lightblue;
+}
+ .main .part1 .pub2 .carousel .carousel-item img{
+    height: 80vh;
+ }
+ .main .part1 .apropos{
+    height: 100vh;
+    box-shadow: 0px 0px 10px 2px lightblue;
+    background-image: url("../images/1.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+ 
+ .main .part1 .apropos h1,h3{
+  font-family: 'El Messiri', sans-serif;
+  color: #002c75;
+
+ }
+ 
+ /*------------------------------------------------------------- part2 -------------------------------------------------------------*/
+
+ .main .part2 .pub3 {
+  height: 80vh;
+ }
+ .main .part2 .pub3 img{
+   height: 80vh;
+ }
+ .main .part2 .pub4{
+  height: 100vh;
+ }
+ .main .part2 .pub4 .ad , .ad img{
+  height: 25vh;
+ }
+ /*------------------------------------------------------------- /Main -------------------------------------------------------------*/
+
+ /*------------------------------------------------------------- footer -------------------------------------------------------------*/
+footer{
+  background-image: url("../images/21.jpg");
+  background-position-y: -60%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+ footer .row1 {
+  height: 30vh;
+  background: #000000cc;
+}
+footer .row2{
+  background: #000000cc;
+}
+footer .row2 a i:hover {
+  transform: scale(1.2);
+  transition: all 0.6s ease-in-out;
+}
+footer .row2 a .fa-facebook-square:hover {
+color: dodgerblue;
+  transition: all 0.6s ease-in-out;
+}
+footer .row2 a .fa-google-plus-square:hover {
+color: #f3182e;
+  transition: all 0.6s ease-in-out;
+}
+footer .row2 a .fa-whatsapp:hover {
+color: green;
+  transition: all 0.6s ease-in-out;
+}
+footer .row3{
+  background: #000000cc;
+}
+footer iframe {
+  height: 26.5vh;
+}
+
+footer iframe:hover {
+box-shadow: 0px 0px 10px 5px lightblue;
+}
+
